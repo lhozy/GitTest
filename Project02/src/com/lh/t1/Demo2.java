@@ -2,12 +2,24 @@ package com.lh.t1;
 
 public class Demo2 {
     public static void main(String[] args) {
-        String str;
-        str = "ABCDEF";
-        printString(str);
+        int[] ints = {1,2,3,4,5};//升序
+        revArry(ints);
 
     }
-    private static void printString(String str){
-        System.out.println(str);
+    /*
+    *    升序->倒序
+     */
+    private static void revArry(int[] nums){
+        for (int min = 0,max = nums.length-1; min < max; min++ ,max--) {
+            int temp;
+            temp = nums[min];
+            nums[min] = nums[max];
+            nums[max] = temp;
+        }
+
+        for (int num : nums) {
+            System.out.println(num);
+        }
+
     }
 }
