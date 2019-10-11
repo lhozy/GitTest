@@ -3,7 +3,7 @@ package com.lh.t1;
 public class Demo2 {
     public static void main(String[] args) {
         String str;
-        str = "ABC";
+        str = "ABCD";
         printString(str);
 
     }
