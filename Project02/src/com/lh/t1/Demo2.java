@@ -2,7 +2,7 @@ package com.lh.t1;
 
 public class Demo2 {
     public static void main(String[] args) {
-        int[] ints = {1,2,3,4,5};//升序
+        int[] ints = {1,2,3,4,5,6};//升序
         revArry(ints);
 
     }
