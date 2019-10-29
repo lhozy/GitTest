@@ -4,7 +4,8 @@ public class Demo2 {
     public static void main(String[] args) {
         int[] ints = {1,2,3,4,5,6};//升序
         revArry(ints);
-
+        System.out.println(12);
+        System.out.println(13);
     }
     /*
     *    升序->倒序
