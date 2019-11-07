@@ -28,5 +28,19 @@ public class JdbcDemo {
         int i = template.update(sql, 1000, 1001);
         Assert.assertEquals(1,i);
     }
+    @Test
+    public void testAdd(){
+        String sql = "insert into emp(id,ename,dept_id) values(?,?,?)";
+        int count = template.update(sql, 1015, "郭靖", 10);
+        System.out.println(count);
+        Assert.assertEquals(1,count);
+    }
+    @Test
+    public void testDel(){
+        String sql = "DELETE FROM emp WHERE id = ?";
+        int count = template.update(sql, 1015);
+        System.out.println(count);
+        Assert.assertEquals(1,count);
+    }
 
 }
